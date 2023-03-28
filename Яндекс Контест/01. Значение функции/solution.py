@@ -1,7 +1,7 @@
 def evaluate_function(a: int, b: int, c: int, x: int) -> int:
-    y = a * x * x + b * x + c
+    y = a * x ** 2 + b * x + c
     return y
 
 
-a, x, b, c = map(int, input().strip().split())
+a, x, b, c = map(int, input().split())
 print(evaluate_function(a, b, c, x))
